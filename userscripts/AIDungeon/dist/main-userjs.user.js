@@ -1326,11 +1326,12 @@ const startDownload = async (fileFormat = 'json', type = 'Export', content = {})
       if (typeof d.deletedAt === 'string') continue;
       const subWorld = {
         id: d.id,
+        shortId: d.shortId,
         type: d.type,
         title: d.title,
         description: d.description,
         prompt: d.prompt,
-        memeory: d.memeory,
+        memory: d.memory,
         authorsNote: d.authorsNote,
         thirdPerson: d.thirdPerson,
         details: d.details,
